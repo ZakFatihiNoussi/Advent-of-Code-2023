@@ -6,14 +6,15 @@ with open("Day_1_input.txt", 'r') as Day_1_input :
     single_digits_count = 0
     multiple_digits_count = 0
     sum_concatenated_digits = 0
-    number_mapping = {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5, 'six': 6, 'seven': 7, 'eight': 8, 'nine': 9}
+    number_mapping = { 'two': 2, 'three': 3, 'four': 4, 'five': 5, 'six': 6, 'seven': 7, 'nine': 9,'one': 1, 'eight': 8}
     
     for line in lines:
-        print(line)
 
-        for word, value in number_mapping.items():
-            line = line.replace(word, str(value))
-        print(line)
+        for word, value in (number_mapping.items()):
+            if word in line:
+                print(line,word)
+                line = line.replace(word, str(value))
+        
         
     
         digit_count = sum(char.isdigit() for char in line)

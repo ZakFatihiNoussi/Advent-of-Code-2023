@@ -24,3 +24,11 @@ So, we have a text file in which:
 #### Part 2:
 1. find the largest integer for each color for each game and multiply them.
 2. sum each game's multiplied integers.
+
+## Day 3:
+#### Part 1
+1. Extracted all the symbols
+2. After omitting all new lines, ended up with a 140 x 140 grid/matrix, so it should start from [0] to [139] then reset.
+3. When finding a whole number on a particular line*, check previous/next character if there's a symbol, else if check line before(above) len(found_number[n])+1 and -1, else check the line below in the same way as the line above.
+
+

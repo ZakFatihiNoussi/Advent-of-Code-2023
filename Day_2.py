@@ -1,6 +1,5 @@
 
-with open("Day_2_input.txt", 'r') as Day_2_input:
-
+with open("Day_2_input.txt") as Day_2_input:
     lines = [line.strip('\n') for line in Day_2_input.readlines()]
     game_dict = {}
     selected_keys = []

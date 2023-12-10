@@ -21,3 +21,6 @@ So, we have a text file in which:
 2. Check if there's any number above 12 red cubes, 13 green, 14 blue.
 3. sum the id of the ones below or equal the threshold
 
+#### Part 2:
+1. find the largest integer for each color for each game and multiply them.
+2. sum each game's multiplied integers.
